@@ -14,6 +14,17 @@ class Users extends Component {
     }; 
   }
 
+  componentDidUpdate() {
+    // try {
+    //   someCodeWhichMightFail()
+    // } catch (err) {
+    //   // handle error
+    // }
+    if (this.props.users.length === 0) {
+      throw new Error('No users provided'); //Generates an Error
+    }
+  }
+
   toggleUsersHandler() {
     // this.state.showUsers = false; // NOT!
     this.setState((curState) => {
@@ -22,7 +33,6 @@ class Users extends Component {
   }
   
   render() {
-
     const usersList = (
       <ul>
         {this.props.users.map((user) => (

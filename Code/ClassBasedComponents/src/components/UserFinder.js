@@ -1,14 +1,12 @@
 import { Fragment, Component } from "react";
 import classes from "./UserFinder.module.css";
 import UsersContext from "../store/users-context";
+import ErrorBoundary from "./ErrorBoundary";
 
 import Users from "./Users";
 
-
-
 class UserFinder extends Component {
   static contextType = UsersContext; // Only works if there is one context
-
 
   constructor() {
     super();
@@ -20,7 +18,7 @@ class UserFinder extends Component {
 
   componentDidMount() {
     // Send http request...
-    this.setState({ filteredUsers: this.context.users});
+    this.setState({ filteredUsers: this.context.users });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -40,11 +38,12 @@ class UserFinder extends Component {
   render() {
     return (
       <Fragment>
-
         <div className={classes.finder}>
           <input type="search" onChange={this.searchChangeHandler.bind(this)} />
         </div>
-        <Users users={this.state.filteredUsers} />
+        <ErrorBoundary>
+          <Users users={this.state.filteredUsers} />
+        </ErrorBoundary>
       </Fragment>
     );
   }
