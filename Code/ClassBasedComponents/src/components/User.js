@@ -3,6 +3,10 @@ import { Component } from 'react';
 import classes from './User.module.css';
 
 class User extends Component{ //This is a classed based component
+  componentWillUnmount() {
+    console.log('User will umount!');
+  }
+
   render() {
     return <li className={classes.user}>{this.props.name}</li>;
   }
