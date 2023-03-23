@@ -9,6 +9,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+
   const fetchMoviesHandler = useCallback(async () => {
     setIsLoading(true);
     setError(null);
@@ -39,6 +40,7 @@ function App() {
     }
     setIsLoading(false);
   }, []);
+
 
   useEffect(() => {
     fetchMoviesHandler();
@@ -72,6 +74,7 @@ function App() {
   if (isLoading) {
     content = <p>Loading...</p>;
   }
+
 
   return (
     <React.Fragment>
