@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"Test","image":"https://img.search.brave.com/lT2VOCLTX2MONerXmzHB3L-rB5PrpwE-ZrC6-8WZH9A/rs:fit:300:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JRi55/dk1uUmY5b21NZVRT/UUxmZDhIYzFBJnBp/ZD1BcGk","date":"2023-04-18","description":"This is a test","id":"69932f8e-fa95-494e-8797-b161eab7efa8"}],"users":[{"email":"test@test.com","password":"$2a$12$I64fFyDUPz9y27VvoWjQ7eWjxqzUT3VYRnwL7MIsEvK8Yo6kktlQK","id":"7cb98f18-39cb-46bc-8195-79a684457514"},{"email":"test1@test.com","password":"$2a$12$sU4ykFSqYzgwrSXHG6LunuMFnrDW/A8fw2r//mAVl3eJfFHwI65Pm","id":"e007fecb-d553-47a7-93ab-4f70425ba521"},{"email":"test@test.co.uk","password":"$2a$12$SQFqQvvaDaLaoq9f1y6Zfu3z6CR5ysNrnIYJOMY1DPE1LTrfvnSG.","id":"9dc4276f-16e8-42db-9700-52dcb8196714"},{"email":"test2@test.com","password":"$2a$12$dJbtCgsuvgtIu0edPgh.bO.DtVJrsqamejJHFvW3ZxjHOrCHowJxi","id":"a3636771-c9bd-44fe-b07b-fa385b599c36"},{"email":"test4@test.com","password":"$2a$12$.4MN4tc9CEaN4CiEKj7P8OOkUoMLrFBCkRDEVjG1XDEJ5XKpqwCPe","id":"474fe13e-0cdf-4355-81de-8bb56744d7d9"},{"email":"bengillitt@gmail.com","password":"$2a$12$YcPPXxeP.zybnDiQu2rGHu.xov1Z6d6AIr8Yx0UBfz3Q6iENtm66u","id":"ae311eb1-d0f0-4512-a5bb-8e671d473e78"}]}
