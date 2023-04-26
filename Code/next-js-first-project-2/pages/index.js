@@ -23,6 +23,19 @@ function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
 
+// export async function getServerSideProps(context) {
+//   const req = context.req;
+//   const res = context.res;
+  
+//   // fetch data from API
+
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS
+//     }
+//   }
+// }
+
 export async function getStaticProps() {
   // This is a reserved name
   // fetch data from an API
@@ -30,7 +43,7 @@ export async function getStaticProps() {
     props: {
       meetups: DUMMY_MEETUPS,
     },
-    revalidate: 10
+    revalidate: 1
   };
 }
 
